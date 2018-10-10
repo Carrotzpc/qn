@@ -88,6 +88,20 @@ client.upload(filepath, { 'x:foo': 'bar' }, function (err, result) {
   // url: 'http://qtestbucket.qiniudn.com/foobar.txt',
   // x:foo: 'bar'
 });
+
+// you can upload a file with uploadTokenOptions, so you can rewrite a exist file
+const bucket = 'test-bucket'
+const key = 'haha.txt'
+const options = {
+  key,
+  uploadTokenOptions: { scope: `${bucket}:${key}` }
+}
+client.upload(filepath, options, function (err, result) {
+  console.log(result);
+  // hash: 'FptOdeKmWhcYHUXa5YmNZxJC934B',
+  // key: 'haha.txt',
+  // url: 'http://qtestbucket.qiniudn.com/haha.txt',
+});
 ```
 
 ### uploadToken
