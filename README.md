@@ -2,24 +2,15 @@ qn
 =======
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![David deps][david-image]][david-url]
 [![Known Vulnerabilities][snyk-image]][snyk-url]
 [![npm download][download-image]][download-url]
 
-[npm-image]: https://img.shields.io/npm/v/qn.svg?style=flat
-[npm-url]: https://npmjs.org/package/qn
-[travis-image]: https://img.shields.io/travis/node-modules/qn.svg?style=flat
-[travis-url]: https://travis-ci.org/node-modules/qn
-[codecov-image]: https://codecov.io/gh/node-modules/qn/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/node-modules/qn
-[david-image]: https://img.shields.io/david/node-modules/qn.svg?style=flat
-[david-url]: https://david-dm.org/node-modules/qn
-[snyk-image]: https://snyk.io/test/npm/qn/badge.svg?style=flat-square
-[snyk-url]: https://snyk.io/test/npm/qn
-[download-image]: https://img.shields.io/npm/dm/qn.svg?style=flat-square
-[download-url]: https://npmjs.org/package/qn
+[npm-image]: https://img.shields.io/npm/v/@switchdog/qn.svg
+[npm-url]: https://npmjs.org/package/@switchdog/qn
+[snyk-image]: https://snyk.io/test/npm/@switchdog/qn/badge.svg
+[snyk-url]: https://snyk.io/test/npm/@switchdog/qn
+[download-image]: https://img.shields.io/npm/dm/@switchdog/qn.svg
+[download-url]: https://npmjs.org/package/@switchdog/qn
 
 
 Another [qiniu](http://docs.qiniu.com/api/) API client for Node.js.
@@ -27,7 +18,7 @@ Another [qiniu](http://docs.qiniu.com/api/) API client for Node.js.
 ## Install
 
 ```bash
-$ npm install qn --save
+$ npm install @switchdog/qn --save
 ```
 
 ## Usage
@@ -35,7 +26,7 @@ $ npm install qn --save
 ### Upload
 
 ```js
-var qn = require('qn');
+var qn = require('@switchdog/qn');
 
 var client = qn.create({
   accessKey: 'your access key',
