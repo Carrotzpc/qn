@@ -101,7 +101,7 @@ or with options
 - scope
 - deadline
 
-````
+```js
 var token = client.uploadToken({
   deadline: utility.timestamp() + 10
 });
